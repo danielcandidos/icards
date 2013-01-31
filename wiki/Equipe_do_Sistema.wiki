@@ -1,10 +1,11 @@
 =Equipe=
 
-*bold*Daniel Cândido*bold* [Eng. SW]
-Gustavo Magalhães Pereira 
-Hanna Karolyne de Melo Pereira
-Rafaella Leandra Souza do Nascimento
-Robson Ugo Ferreira Souza Filho.
+||Eng. SW|| *bold*Daniel Cândido
+||Eng. SW|| Gustavo Magalhães Pereira 
+||Eng. SW|| Hanna Karolyne de Melo Pereira
+||Eng. SW|| Rafaella Leandra Souza do Nascimento
+||Eng. SW|| Robson Ugo Ferreira Souza Filho.
 
-Professor
-Wylliams Barbosa (Scrum Master)
+=Professores=
+Teresa Maciel
+Wylliams Barbosa
