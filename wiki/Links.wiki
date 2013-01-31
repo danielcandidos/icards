@@ -1,3 +1,7 @@
 ||<a href="http://code.google.com/p/icards/">Home</a> ||<a href="http://code.google.com/p/icards/wiki/Equipe_do_Sistema">Equipe</a> ||<a href="http://code.google.com/p/icards/wiki/Descricao_do_Sistema">Descrição do Sistema</a>||<a href="http://code.google.com/p/icards/wiki/Requisitos">Requisitos</a>||<a href="http://code.google.com/p/icards/wiki/Casos_de_Uso">Casos de Uso</a>||<a href="http://code.google.com/p/icards/wiki/Diagramas">Diagramas</a>|| *Links* || 
 
 =Links=
+
+<a href="https://docs.google.com/document/d/1LV1yZfcKMyW9p_HeGbc70qoAgnerTJy_P4bdfKFBs0o/edit"> *User Stories e Planning Poker* </a>
+
+<a href="<a href="https://docs.google.com/document/d/1LV1yZfcKMyW9p_HeGbc70qoAgnerTJy_P4bdfKFBs0o/edit"> User Stories e Planning Poker</a>"> *Scrum* </a>
