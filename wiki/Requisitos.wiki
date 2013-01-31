@@ -1,1 +1,24 @@
-fazer...
+=Requisitos= 
+Requisitos são definidos como funções ou capacidades que devem estar de acordo com o sistema. Nessa fase deveremos elucidar os requisitos do sistema, definindo de uma forma breve as funcionalidades e aplicações que o sistema pode oferecer, principalmente para os usuários finais.
+
+=Requisitos Funcionais=
+
+Os requisitos funcionais expressam o comportamento de um software, desde suas entradas, processamentos e suas saídas.
+
+|| <b>F001 || Usuário Responsável possui controle total da conta através de senha secundária; ||
+|| <b>F002 || Capacidade de bloqueio de cartão por parte do usuário Responsável para controle de gastos do usuário Dependente;||
+|| <b>F003 || Visualização de saldo de crédito e histórico de compras por parte do usuário Comum;||
+|| <b>F004 || Criação de senha personalizada no primeiro acesso a conta e capacidade alteração posterior, se solicitado; ||
+|| <b>F005 || Aviso de término de crédito para maior controle de saldo;||
+|| <b>F006 || Opção de bloqueio do cartão, quando solicitado, para maior segurança no caso de perda ou roubo do mesmo;||
+|| <b>F007 || Possibilidade de depósito de crédito à um usuário qualquer através de terceiros que possuam ou não conta em nossos serviço, com opção de identificação;||
+|| <b>F008 || Solicitação de depósito à terceiros através de e-mail;||
+|| <b>F009 || Acesso por níveis: usuário comum (maior de idade), usuário responsável, usuário dependente e terceiro;||
+
+=Requisitos Não-funcionais=
+
+Os requisitos não funcionais mapeiam os aspectos qualitativos de um software.
+
+|| <b>NF001 || Sistema simples e intuitivo em Java;||
+|| <b>NF002 || Dados de entrada e saída armazenados em banco de dados;||
+|| <b>NF003 || Comunicação do sistema através de conexão com a Internet.||
