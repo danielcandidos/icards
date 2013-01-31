@@ -1,1 +1,12 @@
-fazer...
+=Diagrama de Casos de Uso=
+
+[[foto do diagrama aqui]]
+----------
+=Diagrama de Classes=
+
+[[foto do diagrama aqui]]
+----------
+=Diagrama Entidade-Relacionamento=
+
+[[foto do diagrama aqui]]
+----------
