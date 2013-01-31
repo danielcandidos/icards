@@ -1,1 +1,3 @@
-fazer...
+=O que é o projeto?=
+
+O projeto visa criar uma plataforma de controle gerencial para um cartão pré-pago, a princípio para viagens, mas que pode ser usado em qualquer situação, na qual é mais conveniente não utilizar dinheiro para fazer pagamentos. É mais seguro e apresenta maior controle das transações. É possível adicionar crédito diretamente do sistema. No caso de um responsável com dependentes menores de idade, apresenta vantagens na hora de controlar onde seu dependente está gastando o dinheiro. Já para usuários maiores de idade e sem responsáveis, apresenta a vantagem de poder solicitar por e-mail que terceiros façam um depósito na sua conta e acompanhar tudo isso na página de acesso.    
