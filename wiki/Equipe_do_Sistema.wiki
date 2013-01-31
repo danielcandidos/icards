@@ -1,11 +1,11 @@
 =Equipe=
-
-||Eng. SW|| *bold*Daniel Cândido
-||Eng. SW|| Gustavo Magalhães Pereira 
-||Eng. SW|| Hanna Karolyne de Melo Pereira
-||Eng. SW|| Rafaella Leandra Souza do Nascimento
-||Eng. SW|| Robson Ugo Ferreira Souza Filho.
+|| <b>Daniel Cândido</b> || Eng. SW||
+|| <b>Gustavo Magalhães Pereira</b> || Eng. SW|| Modelagem e POO || 
+|| <b>Hanna Karolyne de Melo Pereira</b> || Eng. SW || Modelagem e POO || 
+|| <b>Rafaella Leandra Souza do Nascimento</b> || Eng. SW|| Modelagem e POO || 
+|| <b>Robson Ugo Ferreira Souza Filho</b> || Eng. SW || Modelagem e POO || 
 
 =Professores=
-Teresa Maciel
-Wylliams Barbosa
+<b>Teresa Maciel</b>
+
+<b>Wylliams Barbosa</b>
