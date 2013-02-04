@@ -1,3 +1,27 @@
 ||<a href="http://code.google.com/p/icards/">Home</a> ||<a href="http://code.google.com/p/icards/wiki/Equipe_do_Sistema">Equipe</a> ||<a href="http://code.google.com/p/icards/wiki/Descricao_do_Sistema">Descrição do Sistema</a>||<a href="http://code.google.com/p/icards/wiki/Requisitos">Requisitos</a>|| *Casos de Uso* ||<a href="http://code.google.com/p/icards/wiki/Diagramas">Diagramas</a>||<a href="http://code.google.com/p/icards/wiki/Links">Links</a>||
 
-fazer...
+= Especificação de Casos de Uso =
+
+Um caso de uso representa uma parte discreta da interação entre um usuário (humano ou máquina) e o sistema. Cada caso de uso tem uma descrição a qual descreve sua funcionalidade.
+
+---------------------------
+
+==UC06 - Bloqueio/Desbloqueio de cartão==
+
+|| *Objetivo* || Bloquear o cartão para qualquer atividade de movimento de dinheiro. ||
+|| *Descrição* || O responsável bloqueia e desbloqueia o uso do cartão através da senha de acesso total.||
+|| *Ator* || Responsável pelo cartão. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || O usuário estar logado como responsável. ||
+|| *Pós-condições* || O uso do cartão estará bloqueado ou desbloqueado. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - Ao acessar o sistema, o Responsável tem a opção de bloquear ou desbloquear o cartão atravéz de botões na tela. ||
+
+|| *Fluxos alternativos* ||
+|| 1. Se ao acessar o sistema, o usuário não for responsável pelo cartão, retornará um erro na tela "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
+|| 2. Se a  o usuário tentar bloquear/desbloquear mais de uma vez. O sistema retorna uma mensagem de erro na tela "<i>*ERRO 002 - Operação já efetuada.*</i>"||
+
+---------------------------
