@@ -22,10 +22,94 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 2 - Após o usuário acessar o sistema como usuário menor de idade, possuirá controle restrito ao sistema. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 Se ao tentar acesso ao sistema como Responsável, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
-|| 2.1 Se ao tentar acesso ao sistema como usuário de menor idade, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "---------"||
+|| 1.1 Se ao tentar acesso ao sistema como Responsável, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>"||
+|| 2.1 Se ao tentar acesso ao sistema como usuário de menor idade, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>"||
 
 ---------------------------
+
+==UC02 - Visualizar crédito==
+
+|| *Objetivo* ||  ||
+|| *Descrição* ||  ||
+|| *Ator* ||  ||
+|| *Prioridade* ||  ||
+|| *Pré-condição* ||  ||
+|| *Pós-condições* ||  ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 -  ||
+|| 2 -  ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 ||
+|| 2.1 ||
+
+-----------------------
+
+=UC03 - ==
+
+|| *Objetivo* ||  ||
+|| *Descrição* ||  ||
+|| *Ator* ||  ||
+|| *Prioridade* ||  ||
+|| *Pré-condição* ||  ||
+|| *Pós-condições* ||  ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 -  ||
+|| 2 -  ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 ||
+|| 2.1 ||
+
+-----------------------
+
+=UC04 - ==
+
+|| *Objetivo* ||  ||
+|| *Descrição* ||  ||
+|| *Ator* ||  ||
+|| *Prioridade* ||  ||
+|| *Pré-condição* ||  ||
+|| *Pós-condições* ||  ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 -  ||
+|| 2 -  ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 ||
+|| 2.1 ||
+
+-----------------------
+
+=UC05 - ==
+
+|| *Objetivo* ||  ||
+|| *Descrição* ||  ||
+|| *Ator* ||  ||
+|| *Prioridade* ||  ||
+|| *Pré-condição* ||  ||
+|| *Pós-condições* ||  ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 -  ||
+|| 2 -  ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 ||
+|| 2.1 ||
+
+-----------------------
 
 ==UC06 - Bloqueio/Desbloqueio de cartão==
 
@@ -50,3 +134,4 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==*CATÁLOGO DE ERROS*==
 ||<i>*ERRO 001 || Você não tem autorização para essa função.*</i>|| 
 ||<i>*ERRO 002 || Operação já efetuada.*</i>||
+||<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>||
