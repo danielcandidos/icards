@@ -22,8 +22,8 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 2 - Após o usuário acessar o sistema como usuário menor de idade, possuirá controle restrito ao sistema. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 Se ao tentar acesso ao sistema como Responsável, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>"||
-|| 2.1 Se ao tentar acesso ao sistema como usuário de menor idade, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>"||
+|| 1.1 Se ao tentar acesso ao sistema como Responsável, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 003 - Erro ao digitar login ou senha. Tente novamente.*</i>"||
+|| 2.1 Se ao tentar acesso ao sistema como usuário de menor idade, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 003 - Erro ao digitar login ou senha. Tente novamente.*</i>"||
 
 ---------------------------
 
