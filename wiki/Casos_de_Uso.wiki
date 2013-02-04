@@ -6,6 +6,27 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
+==UC01 - Acesso ao sistema==
+
+|| *Objetivo* || Acessar o sistema através de um login. ||
+|| *Descrição* || Cada usuário deverá fazer um login para que o sistema dê acesso as informações restritas de acordo com o nível do usuário. ||
+|| *Ator* || Responsável pelo cartão ou usuário menor de idade. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || O sistema deve estar em condições de funcionamento. ||
+|| *Pós-condições* || O usuário estar logado como Responsável pelo cartão ou usuário menor de idade. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - Após o usuário acessar o sistema como Responsável, possuirá o total controle da conta. ||
+|| 2 - Após o usuário acessar o sistema como usuário menor de idade, possuirá controle restrito ao sistema. ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 Se ao tentar acesso ao sistema como Responsável, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
+|| 2.1 Se ao tentar acesso ao sistema como usuário de menor idade, e fornecer informações de login erradas, o sistema retornará o seguinte erro: "---------"||
+
+---------------------------
+
 ==UC06 - Bloqueio/Desbloqueio de cartão==
 
 || *Objetivo* || Bloquear o cartão para qualquer atividade de movimento de dinheiro. ||
@@ -18,7 +39,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - Ao acessar o sistema, o Responsável tem a opção de bloquear ou desbloquear o cartão atravéz de botões na tela. ||
+|| 1 - Ao acessar o sistema, o Responsável tem a opção de bloquear ou desbloquear o cartão através de botões na tela. ||
 
 || *Fluxos alternativos* ||
 || 1. Se ao acessar o sistema, o usuário não for responsável pelo cartão, retornará um erro na tela "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
