@@ -25,3 +25,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 2. Se a  o usuário tentar bloquear/desbloquear mais de uma vez. O sistema retorna uma mensagem de erro na tela "<i>*ERRO 002 - Operação já efetuada.*</i>"||
 
 ---------------------------
+
+==*CATÁLOGO DE ERROS*==
+||<i>*ERRO 001 || Você não tem autorização para essa função.*</i>|| 
+||<i>*ERRO 002 || Operação já efetuada.*</i>||
