@@ -24,10 +24,9 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Fluxos alternativos* ||
 || 1.1 ||
 
-
 ---------------------------
 
-==UC02 - Acesso ao sistema==
+==UC02 - Acessar ao sistema==
 
 || *Objetivo* || Acessar o sistema através de um login. ||
 || *Descrição* || Cada usuário deverá fazer um login para que o sistema dê acesso as informações restritas de acordo com o nível do usuário. ||
@@ -106,7 +105,6 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Fluxos alternativos* ||
 || 1.1 Ao tentar adicionar crédito a alguma conta, se o número da conta do usuário não existir o sistema retornará a mensagem de erro: "<i>*ERRO 004 - Número de conta de usuário não existente. Tente novamente.*</i>" ||
-
 
 -----------------------
 
