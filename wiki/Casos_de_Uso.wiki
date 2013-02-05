@@ -6,7 +6,28 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
-==UC01 - Acesso ao sistema==
+==UC01 - Cadastrar clientes==
+
+|| *Objetivo* || Cadastrar cliente. ||
+|| *Descrição* || Uma pessoa interessada em adquirir o serviço iCards deverá fazer o cadastro para ter uma conta de usuário. ||
+|| *Ator* || Funcionário do banco. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || O sistema deve estar em condições para executar esta função. ||
+|| *Pós-condições* || O usuário será cadastrado com sucesso e possuirá uma conta no sistema. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer informações como: Nome,data de nascimento, CPF, endereço completo, telefone. ||
+
+
+|| *Fluxos alternativos* ||
+|| 1.1 ||
+
+
+---------------------------
+
+==UC02 - Acesso ao sistema==
 
 || *Objetivo* || Acessar o sistema através de um login. ||
 || *Descrição* || Cada usuário deverá fazer um login para que o sistema dê acesso as informações restritas de acordo com o nível do usuário. ||
@@ -27,7 +48,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
-==UC02 - Visualizar crédito e histórico de compras==
+==UC03 - Visualizar crédito e histórico de compras==
 
 || *Objetivo* || Visualizar crédito e histórico de compras. ||
 || *Descrição* || Após o acesso ao sistema, o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, horário e valor da compra)e o saldo de crédito referente a conta de usuário. ||
@@ -47,66 +68,45 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 -----------------------
 
-=UC03 - ==
+=UC04 - Alterar senha==
 
 || *Objetivo* ||  ||
 || *Descrição* ||  ||
-|| *Ator* ||  ||
-|| *Prioridade* ||  ||
-|| *Pré-condição* ||  ||
-|| *Pós-condições* ||  ||
+|| *Ator* || Responsável. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || Estar logado no sistema. ||
+|| *Pós-condições* || Terá alterado a senha de usuário. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 -  ||
-|| 2 -  ||
+|| 1 - Ao acessar o sistema como Responsável, o usuário poderá clicar nos itens "Configuração" e "Alterar senha" para alterar sua senha de acesso ao sistema. ||
+
 
 || *Fluxos alternativos* ||
-|| 1.1 ||
-|| 2.1 ||
+|| 1.1 Ao digitar a nova senha e depois tentar concluir a alteração, se ela não estiver de acordo com a especificação para criar senha o sistema retornará a mensagem de erro: "<i>*ERRO 005 - A senha deverá conter no mínimo dois números. Tente novamente.*</i>"  ||
+
 
 -----------------------
 
-=UC04 - ==
+=UC05 - Crédito adicionado por terceiros==
 
-|| *Objetivo* ||  ||
-|| *Descrição* ||  ||
-|| *Ator* ||  ||
-|| *Prioridade* ||  ||
-|| *Pré-condição* ||  ||
-|| *Pós-condições* ||  ||
-
-==Cenários principais de sucesso==
-
-|| *Usuário* ||
-|| 1 -  ||
-|| 2 -  ||
-
-|| *Fluxos alternativos* ||
-|| 1.1 ||
-|| 2.1 ||
-
------------------------
-
-=UC05 - ==
-
-|| *Objetivo* ||  ||
-|| *Descrição* ||  ||
-|| *Ator* ||  ||
-|| *Prioridade* ||  ||
-|| *Pré-condição* ||  ||
-|| *Pós-condições* ||  ||
+|| *Objetivo* || Adicionar crédito a alguma conta. ||
+|| *Descrição* || O sistema permite que qualquer pessoa sem acesso direto ao sistema adicione crédito a alguma conta, através no número da conta da mesma. ||
+|| *Ator* || Terceiros. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || Ter o número da conta de algum usuário validado. ||
+|| *Pós-condições* || Após a transação, o crédito será depositado na conta do usuário correspondente ao número da conta. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 -  ||
-|| 2 -  ||
+|| 1 - ||
+
 
 || *Fluxos alternativos* ||
-|| 1.1 ||
-|| 2.1 ||
+|| 1.1 Ao tentar adicionar crédito a alguma conta, se o número da conta do usuário não existir o sistema retornará a mensagem de erro: "<i>*ERRO 004 - Número de conta de usuário não existente. Tente novamente.*</i>" ||
+
 
 -----------------------
 
@@ -134,3 +134,5 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ||<i>*ERRO 001 || Você não tem autorização para essa função.*</i>|| 
 ||<i>*ERRO 002 || Operação já efetuada.*</i>||
 ||<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>||
+||<i>*ERRO 004 || Número de conta de usuário não existente. Tente novamente.*</i>||
+||<i>*ERRO 005 || A senha deverá conter no mínimo dois números. Tente novamente.*</i>||
