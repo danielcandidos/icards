@@ -67,7 +67,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 -----------------------
 
-=UC04 - Alterar senha==
+==UC04 - Alterar senha==
 
 || *Objetivo* ||  ||
 || *Descrição* ||  ||
@@ -87,7 +87,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 -----------------------
 
-=UC05 - Crédito adicionado por terceiros==
+==UC05 - Crédito adicionado por terceiros==
 
 || *Objetivo* || Adicionar crédito a alguma conta. ||
 || *Descrição* || O sistema permite que qualquer pessoa sem acesso direto ao sistema adicione crédito a alguma conta, através no número da conta da mesma. ||
