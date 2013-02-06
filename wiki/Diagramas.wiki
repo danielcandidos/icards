@@ -10,7 +10,13 @@ http://icards.googlecode.com/files/UCDiagram_Image.png
 
 =Diagrama de Classes=
 
-ClassD.asta - SOON
+Class.asta - SOON
+
+----------
+
+=Diagrama de Pacotes=
+
+Package.asta - SOON
 
 ----------
 
