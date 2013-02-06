@@ -22,5 +22,5 @@ Os requisitos funcionais expressam o comportamento de um software, desde suas en
 Os requisitos não funcionais mapeiam os aspectos qualitativos de um software.
 
 || <b>NF001 || Sistema simples e intuitivo em Java;||
-|| <b>NF002 || Dados de entrada e saída armazenados em banco de dados;||
+|| <b>NF002 || Dados de entrada e saída armazenados em banco de dados mySQL;||
 || <b>NF003 || Comunicação do sistema através de conexão com a Internet.||
