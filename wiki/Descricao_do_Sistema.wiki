@@ -1,4 +1,6 @@
+<p align="center">
 ||<a href="http://code.google.com/p/icards/">Home</a> ||<a href="http://code.google.com/p/icards/wiki/Equipe_do_Sistema">Equipe</a> || *Descrição do Sistema* ||<a href="http://code.google.com/p/icards/wiki/Requisitos">Requisitos</a>||<a href="http://code.google.com/p/icards/wiki/Casos_de_Uso">Casos de Uso</a>||<a href="http://code.google.com/p/icards/wiki/Diagramas">Diagramas</a>||<a href="http://code.google.com/p/icards/wiki/Links">Links</a>||
+</p>
 
 =O que é o projeto?=
 
