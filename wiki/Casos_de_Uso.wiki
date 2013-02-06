@@ -38,7 +38,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Ator* || Responsável pelo cartão ou usuário menor de idade. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || UC01. ||
-|| *Pós-condições* ||O Usuário tem acesso ao sistema.
+|| *Pós-condições* ||O Usuário tem acesso ao sistema.||
 
 ==Cenários principais de sucesso==
 
