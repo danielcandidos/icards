@@ -8,6 +8,7 @@
 || <b>Robson Ugo Ferreira Souza Filho</b> || Eng. SW || Modelagem e POO || 
 
 =Professores=
-<b>Teresa Maciel</b>
 
-<b>Wylliams Barbosa</b>
+<b>Teresa Maciel</b> - Fundamentos de Engenharia de Software
+
+<b>Wylliams Barbosa</b> - Modelagem e Programação Orientada a Objetos
