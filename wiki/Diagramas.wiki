@@ -2,7 +2,9 @@
 
 =Diagrama de Casos de Uso=
 
-[.png do diagrama aqui e download do .astah]
+http://icards.googlecode.com/files/UCDiagram_Image.png
+
+UCDiagram.asta - <a href="http://icards.googlecode.com/files/UCDiagram.asta">DOWNLOAD</a>
 ----------
 =Diagrama de Classes=
 
