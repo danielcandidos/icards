@@ -10,12 +10,12 @@ UCDiagram.asta - <a href="http://icards.googlecode.com/files/UCDiagram.asta">DOW
 
 =Diagrama de Classes=
 
-ClassDiagram.asta
+ClassD.asta - SOON
 
 ----------
 
 =Diagrama Entidade-Relacionamento=
 
-ERDiagram.asta
+ERDiagram.asta - SOON
 
 ----------
