@@ -5,12 +5,17 @@
 http://icards.googlecode.com/files/UCDiagram_Image.png
 
 UCDiagram.asta - <a href="http://icards.googlecode.com/files/UCDiagram.asta">DOWNLOAD</a>
+
 ----------
+
 =Diagrama de Classes=
 
-[.png do diagrama aqui e download do .astah]
+ClassDiagram.asta
+
 ----------
+
 =Diagrama Entidade-Relacionamento=
 
-[.png do diagrama aqui e download do .astah]
+ERDiagram.asta
+
 ----------
