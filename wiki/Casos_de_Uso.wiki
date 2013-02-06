@@ -10,7 +10,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Objetivo* || Cadastrar cliente. ||
 || *Descrição* || Uma pessoa interessada em adquirir o serviço iCards deverá fazer o cadastro para ter uma conta de usuário. ||
-|| *Ator* || Funcionário do banco. ||
+|| *Ator* || Admin. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. ||
 || *Pós-condições* || O usuário será cadastrado com sucesso, UC02. ||
@@ -21,7 +21,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer informações como: Nome,data de nascimento, CPF, endereço completo, telefone, senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 ||
+|| 1.1 - ... ||
 ---------------------------
 
 ==UC02 - Fazer Login==
@@ -75,7 +75,6 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Usuário* ||
 || 1 - Ao acessar o sistema como Responsável, o usuário poderá clicar nos itens "Configuração" e "Alterar senha" para alterar sua senha de acesso ao sistema. ||
-
 
 || *Fluxos alternativos* ||
 || 1.1 Ao digitar a nova senha e depois tentar concluir a alteração, se ela não estiver de acordo com a especificação para criar senha o sistema retornará a mensagem de erro: "<i>*ERRO 005 - A senha deverá conter no mínimo dois números. Tente novamente.*</i>"  ||
