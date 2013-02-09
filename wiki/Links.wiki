@@ -7,3 +7,5 @@
 ==<a href="https://docs.google.com/document/d/1LV1yZfcKMyW9p_HeGbc70qoAgnerTJy_P4bdfKFBs0o/edit"> *User Stories, Business Value e Planning Poker* </a>==
 
 ==<a href="https://docs.google.com/spreadsheet/ccc?key=0AqKRGtA9_NJsdDg4ZnpRakxXTUhwdlJyTENuZ2RrOUE"> *Scrum* </a>==
+
+==<a href="https://docs.google.com/document/d/1GZJWdMzBCOboRV6OhRyUswn3mdYVVl5n_RTYYGlbRFs/edit?usp=sharing"> *Plano de Gerência de Configuração* </a>==
