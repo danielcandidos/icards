@@ -2,26 +2,21 @@
 
 =Diagrama de Casos de Uso=
 
-UCDiagram.asta - <a href="http://icards.googlecode.com/files/UCDiagram.asta">DOWNLOAD</a>
-
-http://icards.googlecode.com/files/UCDiagram_Image.png
+http://icards.googlecode.com/files/UseCaseDiagramV2.png
 
 ----------
 
 =Diagrama de Classes=
 
-Class.asta - SOON
 
 ----------
 
 =Diagrama de Pacotes=
 
-Package.asta - SOON
 
 ----------
 
 =Diagrama Entidade-Relacionamento=
 
-ERDiagram.asta - SOON
 
 ----------
