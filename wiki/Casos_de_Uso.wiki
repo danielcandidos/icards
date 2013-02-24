@@ -24,7 +24,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1.1 - ... ||
 ---------------------------
 
-==UC02 - Fazer Login==
+==UC02 - Login==
 
 || *Objetivo* || Ter acesso ao sistema. ||
 || *Descrição* || O Usuário deverá entrar com o número do iCard e com a senha, para ter acesso as informações restritas de acordo com o tipo do usuário. ||
