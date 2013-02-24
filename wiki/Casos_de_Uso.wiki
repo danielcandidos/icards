@@ -42,7 +42,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
-==UC03 - Visualizar Crédito e Histórico de Compras==
+==UC03 - Visualizar Histórico e Saldo==
 
 || *Objetivo* || Visualizar crédito e histórico de compras. ||
 || *Descrição* || Após o acesso ao sistema(UC02), o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, horário e valor da compra)e o saldo de crédito referente a conta de usuário. ||
