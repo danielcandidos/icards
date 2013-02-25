@@ -18,10 +18,10 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer informações como: Nome,data de nascimento, CPF, endereço completo, telefone, senha. ||
+|| 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer informações como: Nome,Data de Nascimento, CPF, Endereço Completo, Telefone, Senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - ... ||
+|| 1.1 - Os campos CPF e Endereço Completo deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Digite novamente.*</i>" ||
 ---------------------------
 
 ==UC02 - Login==
@@ -57,8 +57,6 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - Ao clicar no ícone "Visualizar histórico de compras", o usuário terá acesso a todas informações de compras referentes à conta de usuário, como lugar onde a compra foi realizada, data, horário e valor da compra. Poderá fazer a filtragem de informações por mês.  ||
 || 2 - Ao clicar no ícone "Visualizar saldo de crédito", o usuário terá acesso ao saldo de crédito referente a conta de usuário.||
 
-|| *Fluxos alternativos* ||
-|| 1.1 ||
 
 -----------------------
 
@@ -115,10 +113,31 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - Ao acessar o sistema, o Titular tem a opção de bloquear ou desbloquear o cartão através de botões na tela. ||
 
 || *Fluxos alternativos* ||
-|| 1. Se ao acessar o sistema, o usuário não for Titular do cartão, retornará um erro na tela "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
-|| 2. Se a  o usuário tentar bloquear/desbloquear mais de uma vez. O sistema retorna uma mensagem de erro na tela "<i>*ERRO 002 - Operação já efetuada.*</i>"||
+|| 1.1 Se ao acessar o sistema, o usuário não for Titular do cartão, retornará um erro na tela "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
+|| 1.2 Se a  o usuário tentar bloquear/desbloquear mais de uma vez. O sistema retorna uma mensagem de erro na tela "<i>*ERRO 002 - Operação já efetuada.*</i>"||
 
 ---------------------------
+
+
+==UC07 - Atualizar Cliente==
+
+|| *Objetivo* || Atualizar dados cadastrais de um cliente. ||
+|| *Descrição* ||  ||
+|| *Ator* || Administrador. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || O cliente deve possuir um cadastro. ||
+|| *Pós-condições* || Os dados cadastrais do cliente são atualizados com sucesso. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 -  ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - ||
+
+-----------------------------
+
 
 ==UC08 - Debitar==
 
@@ -138,9 +157,29 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1.1 - Ao verificar, o saldo ser insuficiente e retornar valor negativo, impossibilitando o débito. Retornando o erro: "<i>*ERRO 006 - Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>" ||
 ---------------------------
 
+==UC09 - Cadastrar estabelecimento==
+
+|| *Objetivo* ||  ||
+|| *Descrição* ||  ||
+|| *Ator* || Administrador. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* ||  ||
+|| *Pós-condições* || ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 -  ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - ||
+---------------------------
+
 ==*CATÁLOGO DE ERROS*==
 ||<i>*ERRO 001 || Você não tem autorização para essa função.*</i>|| 
 ||<i>*ERRO 002 || Operação já efetuada.*</i>||
 ||<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>||
 ||<i>*ERRO 004 || Número de conta de usuário não existente. Tente novamente.*</i>||
 ||<i>*ERRO 005 || A senha deverá conter no mínimo dois números. Tente novamente.*</i>||
+||<i>*ERRO 006 || Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>||
+||<i>*ERRO 007 || Entrada inválida. Digite novamente.*</i>||
