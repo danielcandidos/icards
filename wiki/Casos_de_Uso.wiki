@@ -28,7 +28,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Objetivo* || Ter acesso ao sistema. ||
 || *Descrição* || O Usuário deverá entrar com o número do iCard e com a senha, para ter acesso as informações restritas de acordo com o tipo do usuário. ||
-|| *Ator* || Responsável pelo cartão ou usuário menor de idade. ||
+|| *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || UC01. ||
 || *Pós-condições* ||O Usuário tem acesso ao sistema.||
@@ -46,7 +46,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Objetivo* || Visualizar crédito e histórico de compras. ||
 || *Descrição* || Após o acesso ao sistema(UC02), o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, horário e valor da compra)e o saldo de crédito referente a conta de usuário. ||
-|| *Ator* || Responsável ou usuário menor de idade. ||
+|| *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Média. ||
 || *Pré-condição* || UC02.  ||
 || *Pós-condições* || O usuário terá acesso ao histórico das compras e ao saldo de crédito. ||
@@ -66,7 +66,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Objetivo* || Alterar a senha de usuário. ||
 || *Descrição* ||Caso o usuário sinta a necessidade de mudar a senha ele terá a opção (UC04).  ||
-|| *Ator* || Responsável. ||
+|| *Ator* || Titular. ||
 || *Prioridade* || Média. ||
 || *Pré-condição* || UC02. ||
 || *Pós-condições* || Terá alterado a senha de usuário. ||
@@ -74,7 +74,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - Ao acessar o sistema como Responsável, o usuário poderá clicar nos itens "Configuração" e "Alterar senha" para alterar sua senha de acesso ao sistema. ||
+|| 1 - Ao acessar o sistema como Titular, o usuário poderá clicar nos itens "Configuração" e "Alterar senha" para alterar sua senha de acesso ao sistema. ||
 
 || *Fluxos alternativos* ||
 || 1.1 Ao digitar a nova senha e depois tentar concluir a alteração, se ela não estiver de acordo com a especificação para criar senha o sistema retornará a mensagem de erro: "<i>*ERRO 005 - A senha deverá conter no mínimo dois números. Tente novamente.*</i>"  ||
@@ -103,8 +103,8 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==UC06 - Bloqueio/Desbloqueio de cartão==
 
 || *Objetivo* || Bloquear o cartão para qualquer atividade de movimento de dinheiro. ||
-|| *Descrição* || O responsável bloqueia e desbloqueia o uso do cartão através da senha de acesso total.||
-|| *Ator* || Responsável pelo cartão. ||
+|| *Descrição* || O Titular bloqueia e desbloqueia o uso do cartão através da senha de acesso total.||
+|| *Ator* || Titular. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || UC02. ||
 || *Pós-condições* || O uso do cartão estará bloqueado ou desbloqueado. ||
@@ -112,10 +112,10 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - Ao acessar o sistema, o Responsável tem a opção de bloquear ou desbloquear o cartão através de botões na tela. ||
+|| 1 - Ao acessar o sistema, o Titular tem a opção de bloquear ou desbloquear o cartão através de botões na tela. ||
 
 || *Fluxos alternativos* ||
-|| 1. Se ao acessar o sistema, o usuário não for responsável pelo cartão, retornará um erro na tela "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
+|| 1. Se ao acessar o sistema, o usuário não for Titular do cartão, retornará um erro na tela "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
 || 2. Se a  o usuário tentar bloquear/desbloquear mais de uma vez. O sistema retorna uma mensagem de erro na tela "<i>*ERRO 002 - Operação já efetuada.*</i>"||
 
 ---------------------------
@@ -124,7 +124,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Objetivo* || Debitar crédito do cartão quando o pagamento for solicitado. ||
 || *Descrição* || Quando a compra através do cartão for feita e o saldo for verificado como positivo, o pagamento é debitado da conta. ||
-|| *Ator* || Titular ou dependente. ||
+|| *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. Verificar se há saldo suficiente disponível na conta. ||
 || *Pós-condições* || O pagamento e o débito serão realizados. ||
