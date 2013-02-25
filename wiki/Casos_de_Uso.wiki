@@ -4,7 +4,7 @@
 
 Um caso de uso representa uma parte discreta da interação entre um usuário (humano ou máquina) e o sistema. Cada caso de uso tem uma descrição a qual descreve sua funcionalidade.
 
----------------------------
+*---------------------------*
 
 ==UC01 - Cadastrar Cliente==
 
@@ -118,7 +118,6 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
-
 ==UC07 - Atualizar Cliente==
 
 || *Objetivo* || Atualizar dados cadastrais de um cliente. ||
@@ -138,7 +137,6 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 -----------------------------
 
-
 ==UC08 - Debitar==
 
 || *Objetivo* || Debitar crédito do cartão quando o pagamento for solicitado. ||
@@ -155,6 +153,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Fluxos alternativos* ||
 || 1.1 - Ao verificar, o saldo ser insuficiente e retornar valor negativo, impossibilitando o débito. Retornando o erro: "<i>*ERRO 006 - Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>" ||
+
 ---------------------------
 
 ==UC09 - Cadastrar estabelecimento==
@@ -173,6 +172,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Fluxos alternativos* ||
 || 1.1 - ||
+
 ---------------------------
 
 ==*CATÁLOGO DE ERROS*==
