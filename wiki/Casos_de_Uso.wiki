@@ -120,6 +120,24 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
+==UC08 - Debitar==
+
+|| *Objetivo* || Debitar crédito do cartão quando o pagamento for solicitado. ||
+|| *Descrição* || Quando a compra através do cartão for feita e o saldo for verificado como positivo, o pagamento é debitado da conta. ||
+|| *Ator* || Titular ou dependente. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. Verificar se há saldo suficiente disponível na conta. ||
+|| *Pós-condições* || O pagamento e o débito serão realizados. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - O usuário fez a solicitação de pagamento, o sistema verifica o crédito e, se positivo, debita a quantia referente da conta. ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - Ao verificar, o saldo ser insuficiente e retornar valor negativo, impossibilitando o débito. Retornando o erro: "<i>*ERRO 006 - Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>" ||
+---------------------------
+
 ==*CATÁLOGO DE ERROS*==
 ||<i>*ERRO 001 || Você não tem autorização para essa função.*</i>|| 
 ||<i>*ERRO 002 || Operação já efetuada.*</i>||
