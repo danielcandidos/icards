@@ -30,7 +30,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* || O Usuário deverá entrar com o número do iCard e com a senha, para ter acesso as informações restritas de acordo com o tipo do usuário. ||
 || *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Alta. ||
-|| *Pré-condição* || UC01. ||
+|| *Pré-condição* || O Usuário deverá ter cadastro. (UC01) ||
 || *Pós-condições* ||O Usuário tem acesso ao sistema.||
 
 ==Cenários principais de sucesso==
@@ -48,7 +48,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* || Após o acesso ao sistema(UC02), o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, horário e valor da compra)e o saldo de crédito referente a conta de usuário. ||
 || *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Média. ||
-|| *Pré-condição* || UC02.  ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02)  ||
 || *Pós-condições* || O usuário terá acesso ao histórico das compras e ao saldo de crédito. ||
 
 ==Cenários principais de sucesso==
@@ -66,7 +66,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* ||Caso o usuário sinta a necessidade de mudar a senha ele terá a opção (UC04).  ||
 || *Ator* || Titular. ||
 || *Prioridade* || Média. ||
-|| *Pré-condição* || UC02. ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
 || *Pós-condições* || Terá alterado a senha de usuário. ||
 
 ==Cenários principais de sucesso==
@@ -104,7 +104,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* || O Titular bloqueia e desbloqueia o uso do cartão através da senha de acesso total.||
 || *Ator* || Titular. ||
 || *Prioridade* || Alta. ||
-|| *Pré-condição* || UC02. ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
 || *Pós-condições* || O uso do cartão estará bloqueado ou desbloqueado. ||
 
 ==Cenários principais de sucesso==
