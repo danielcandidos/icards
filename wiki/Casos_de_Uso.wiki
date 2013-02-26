@@ -45,10 +45,10 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==UC03 - Visualizar Histórico e Saldo==
 
 || *Objetivo* || Visualizar crédito e histórico de compras. ||
-|| *Descrição* || Após o acesso ao sistema(UC02), o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, horário e valor da compra)e o saldo de crédito referente a conta de usuário. ||
+|| *Descrição* || Após o acesso ao sistema (UC02), o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, horário e valor da compra)e o saldo de crédito referente a conta de usuário. ||
 || *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Média. ||
-|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02)  ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema. (UC02)  ||
 || *Pós-condições* || O usuário terá acesso ao histórico das compras e ao saldo de crédito. ||
 
 ==Cenários principais de sucesso==
@@ -66,7 +66,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* ||Caso o usuário sinta a necessidade de mudar a senha ele terá a opção (UC04).  ||
 || *Ator* || Titular. ||
 || *Prioridade* || Média. ||
-|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema. (UC02) ||
 || *Pós-condições* || Terá alterado a senha de usuário. ||
 
 ==Cenários principais de sucesso==
@@ -104,7 +104,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* || O Titular bloqueia e desbloqueia o uso do cartão através da senha de acesso total.||
 || *Ator* || Titular. ||
 || *Prioridade* || Alta. ||
-|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema. (UC02) ||
 || *Pós-condições* || O uso do cartão estará bloqueado ou desbloqueado. ||
 
 ==Cenários principais de sucesso==
@@ -190,11 +190,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - ||
-
-|| *Fluxos alternativos* ||
-|| 1.1  ||
-
+|| 1 - O cliente selecionará o item "Gerar Extrato", e o sistema gerará o arquivo .PDF com as últimas informações de saldo e histórico de compras da conta.||
 
 -------------------------
 
