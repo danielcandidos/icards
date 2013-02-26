@@ -178,7 +178,27 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
-==UC010 - Manter estabelecimento==
+==UC010 - Imprimir extrato==
+
+|| *Objetivo* || Imprimir arquivo com informações da conta.  ||
+|| *Descrição* || O sistema gerará um arquivo .PDF com informações de Histório de Compras e Saldo. Além de visualizar o cliente poderá imprimir. ||
+|| *Ator* || Titular ou Dependente. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
+|| *Pós-condições* || O sistema gerará arquivo .PDF com informações sobre a conta e poderá imprimi-lo. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - ||
+
+|| *Fluxos alternativos* ||
+|| 1.1  ||
+
+
+-------------------------
+
+==UC011 - Manter estabelecimento==
 
 || *Objetivo* || Alterar ou excluir informações referentes a um estabelecimento cadastrado.  ||
 || *Descrição* || O administrador altera ou exclui informações referentes a um estabelecimento cadastrado. ||
