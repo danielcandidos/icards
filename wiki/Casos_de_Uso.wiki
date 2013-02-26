@@ -13,7 +13,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Ator* || Administrador. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || Definir tipo de usuário. O sistema deve estar em condições para executar esta função. ||
-|| *Pós-condições* || O usuário será cadastrado com sucesso, UC02. ||
+|| *Pós-condições* || O usuário será cadastrado com sucesso. ||
 
 ==Cenários principais de sucesso==
 
@@ -22,6 +22,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Fluxos alternativos* ||
 || 1.1 - Os campos CPF e Endereço Completo e Telefone deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
+
 ---------------------------
 
 ==UC02 - Login==
@@ -56,7 +57,6 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Usuário* ||
 || 1 - Ao clicar no ícone "Visualizar histórico de compras", o usuário terá acesso a todas informações de compras referentes à conta de usuário, como lugar onde a compra foi realizada, data, horário e valor da compra. Poderá fazer a filtragem de informações por mês.  ||
 || 2 - Ao clicar no ícone "Visualizar saldo de crédito", o usuário terá acesso ao saldo de crédito referente a conta de usuário.||
-
 
 -----------------------
 
