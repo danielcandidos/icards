@@ -21,7 +21,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer informações como: Nome,Data de Nascimento, CPF, Endereço Completo, Telefone, Senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Os campos CPF e Endereço Completo deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Digite novamente.*</i>" ||
+|| 1.1 - Os campos CPF e Endereço Completo deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
 ---------------------------
 
 ==UC02 - Login==
@@ -120,20 +120,22 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ==UC07 - Manter Cliente==
 
-|| *Objetivo* || Atualizar dados cadastrais de um cliente. ||
-|| *Descrição* ||  ||
+|| *Objetivo* || Alterar ou excluir dados cadastrais de um cliente. ||
+|| *Descrição* || O solicitante do serviço poderá alterar seus dados cadastrais, assim como cancelar o serviço. ||
 || *Ator* || Administrador. ||
 || *Prioridade* || Média. ||
 || *Pré-condição* || O cliente deve possuir um cadastro. ||
-|| *Pós-condições* || Os dados cadastrais do cliente são atualizados com sucesso. ||
+|| *Pós-condições* || Os dados cadastrais do cliente são atualizados ou excluídos com sucesso. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 -  ||
+|| 1 - Ao alterar, o Administrador acessa as informações já cadastradas do cliente e faz as alterações necessárias, ao final, o programa rearmazena os dados.||
+|| 2 - Ao excluir, o Administrador acessa as informações do cliente e cancela a conta do mesmo. Todos os dados serão excluídos.||
 
 || *Fluxos alternativos* ||
-|| 1.1 - ||
+|| 1.1 - Se ao tentar editar as informações de um determinado cliente e for digitado alguma entrada fora dos padrões para edição, o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
+|| 2.1 - Se ao tentar excluir as informações do cliente informando e alguma entrada fora dos padrões de exclusão acontecer,o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>"||
 
 -----------------------------
 
@@ -177,20 +179,23 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ==UC010 - Manter estabelecimento==
 
-|| *Objetivo* ||  ||
-|| *Descrição* ||  ||
+|| *Objetivo* || Alterar ou excluir informações referentes a um estabelecimento cadastrado.  ||
+|| *Descrição* || O administrador altera ou exclui informações referentes a um estabelecimento cadastrado. ||
 || *Ator* || Administrador. ||
 || *Prioridade* || Média. ||
-|| *Pré-condição* ||  ||
-|| *Pós-condições* || ||
+|| *Pré-condição* || Estabelecimento cadastrado. ||
+|| *Pós-condições* || Informações cadastradas alteradas ou excluídas com sucesso. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 -  ||
+|| 1 - Ao alterar, o Administrador acessa as informações já cadastradas do estabelecimento e faz as alterações necessárias, ao final, o programa rearmazena os dados.||
+|| 2 - Ao excluir, o Administrador acessa as informações do estabelecimento e cancela a existência do mesmo. Todos os dados serão excluídos.||
+
 
 || *Fluxos alternativos* ||
-|| 1.1 - ||
+|| 1.1 - Se ao tentar editar as informações de um determinado estabelecimento e for digitado alguma entrada fora dos padrões para edição, o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
+|| 2.1 - Se ao tentar excluir as informações do estabelecimento informando, e alguma entrada fora dos padrões de exclusão acontecer,o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>"||
 
 ---------------------------
 
@@ -201,4 +206,4 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ||<i>*ERRO 004 || Número de conta de usuário não existente. Tente novamente.*</i>||
 ||<i>*ERRO 005 || A senha deverá conter no mínimo dois números. Tente novamente.*</i>||
 ||<i>*ERRO 006 || Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>||
-||<i>*ERRO 007 || Entrada inválida. Digite novamente.*</i>||
+||<i>*ERRO 007 || Entrada inválida. Tente novamente.*</i>||
