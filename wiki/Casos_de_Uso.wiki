@@ -12,7 +12,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* || Uma pessoa interessada em adquirir o serviço iCards deverá fazer o cadastro para ter uma conta de usuário. ||
 || *Ator* || Administrador. ||
 || *Prioridade* || Alta. ||
-|| *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. ||
+|| *Pré-condição* || Definir tipo de usuário. O sistema deve estar em condições para executar esta função. ||
 || *Pós-condições* || O usuário será cadastrado com sucesso, UC02. ||
 
 ==Cenários principais de sucesso==
@@ -21,7 +21,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer informações como: Nome,Data de Nascimento, CPF, Endereço Completo, Telefone, Senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Os campos CPF e Endereço Completo deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
+|| 1.1 - Os campos CPF e Endereço Completo e Telefone deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
 ---------------------------
 
 ==UC02 - Login==
@@ -160,20 +160,21 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ==UC09 - Cadastrar estabelecimento==
 
-|| *Objetivo* ||  ||
-|| *Descrição* ||  ||
+|| *Objetivo* || Cadastrar estabelecimento. ||
+|| *Descrição* || O administrador deverá fazer o cadastro de estabelecimento para então fazer cadastro de usuário. ||
 || *Ator* || Administrador. ||
 || *Prioridade* || Média. ||
-|| *Pré-condição* ||  ||
-|| *Pós-condições* || ||
+|| *Pré-condição* || O sistema deve estar em condições para executar esta função. ||
+|| *Pós-condições* || O estabelecimento será cadastrado com sucesso, UC02. ||
+
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 -  ||
+|| 1 - No cadastro, o administrador deverá fornecer informações como: Nome do estabelecimento, Número de Identificação , Endereço Completo, Telefone, Gerente. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - ||
+|| 1.1 - Os campos Número de Identificação, Telefone e Endereço Completo deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
 
 ---------------------------
 
