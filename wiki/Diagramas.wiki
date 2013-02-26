@@ -5,8 +5,8 @@ https://icards.googlecode.com/files/iCards-UseCaseDiagram-V4.png
 
 ----------
 
-=Diagrama de Classes=
-
+=Diagrama de Classes - Version 1.0=
+https://icards.googlecode.com/files/iCards-ClassDiagram-V1.png
 
 ----------
 
