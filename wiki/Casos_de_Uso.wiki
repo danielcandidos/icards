@@ -10,7 +10,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Objetivo* || Cadastrar cliente. ||
 || *Descrição* || Uma pessoa interessada em adquirir o serviço iCards deverá fazer o cadastro para ter uma conta de usuário. ||
-|| *Ator* || Admin. ||
+|| *Ator* || Administrador. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. ||
 || *Pós-condições* || O usuário será cadastrado com sucesso, UC02. ||
@@ -118,7 +118,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
-==UC07 - Atualizar Cliente==
+==UC07 - Manter Cliente==
 
 || *Objetivo* || Atualizar dados cadastrais de um cliente. ||
 || *Descrição* ||  ||
@@ -141,7 +141,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Objetivo* || Debitar crédito do cartão quando o pagamento for solicitado. ||
 || *Descrição* || Quando a compra através do cartão for feita e o saldo for verificado como positivo, o pagamento é debitado da conta. ||
-|| *Ator* || Titular ou Dependente. ||
+|| *Ator* || Vendedor. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. Verificar se há saldo suficiente disponível na conta. ||
 || *Pós-condições* || O pagamento e o débito serão realizados. ||
@@ -157,6 +157,25 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ---------------------------
 
 ==UC09 - Cadastrar estabelecimento==
+
+|| *Objetivo* ||  ||
+|| *Descrição* ||  ||
+|| *Ator* || Administrador. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* ||  ||
+|| *Pós-condições* || ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 -  ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - ||
+
+---------------------------
+
+==UC010 - Manter estabelecimento==
 
 || *Objetivo* ||  ||
 || *Descrição* ||  ||
