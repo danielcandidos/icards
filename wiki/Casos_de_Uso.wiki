@@ -18,10 +18,10 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer informações como: Nome,Data de Nascimento, CPF, Endereço Completo, Telefone, Senha. ||
+|| 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer as seguintes informações: Nome,Data de Nascimento, CPF, Email, Nacionalidade,Endereço, Telefone, Senha, Tipo de Usuário(dependendo do tipo, deverá fornecer o CPF do Dependente) e senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Os campos CPF e Endereço Completo e Telefone deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
+|| 1.1 - O campos Nome, CPF, Email, Tipo de Usuário e Senha são obrigatórios. Se ao tentar cadastrar e algum deste campo estiver vazio, o sistema retornará a seguinte mensagem de texto: "<i>*Campo obrigatório não pode ser vazio.*</i>" ||
 
 ---------------------------
 
