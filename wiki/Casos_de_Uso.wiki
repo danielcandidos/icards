@@ -29,7 +29,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==UC02 - Login==
 
 || *Objetivo* || Ter acesso ao sistema. ||
-|| *Descrição* || O Usuário deverá entrar com o número do iCard e com a senha, para ter acesso as informações restritas de acordo com o tipo do usuário. ||
+|| *Descrição* || O Usuário deverá entrar com o número do iCard ,com a senha e selecionar o tipo de Usuário, para ter acesso as informações restritas de acordo com o tipo do usuário. ||
 || *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Alta. ||
 || *Pré-condição* || O Usuário deverá ter cadastro. (UC01) ||
@@ -40,7 +40,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Usuário* ||
 || 1 – Se o usuário número da conta e a senha estiverem corretos, possuirá o controle da conta. ||
 || *Fluxos alternativos* ||
-|| 1.1 – Se o usuário número da conta e/ou a senha estiverem errados, o sistema retornará o seguinte erro: "<i>*ERRO 003 - Erro ao digitar login ou senha. Tente novamente.*</i>"||
+|| 1.1 – Se o usuário número da conta e/ou a senha estiverem errados, o sistema retornará o seguinte erro: "<i>*Erro ao digitar número do cartão ou senha.*</i>"||
 
 ---------------------------
 
