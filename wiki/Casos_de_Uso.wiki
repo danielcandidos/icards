@@ -21,7 +21,8 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer as seguintes informações: Nome,Data de Nascimento, CPF, Email, Nacionalidade,Endereço, Telefone, Senha, Tipo de Usuário(dependendo do tipo, deverá fornecer o CPF do Dependente) e senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - O campos Nome, CPF, Email, Tipo de Usuário e Senha são obrigatórios. Se ao tentar cadastrar e algum deste campo estiver vazio, o sistema retornará a seguinte mensagem de texto: "<i>*Campo obrigatório não pode ser vazio.*</i>" ||
+|| 1.1 - Se ao tentar cadastrar e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazio.*</i>"||
+|| 1.2 - O campos Nome, CPF, Email, Tipo de Usuário e Senha são obrigatórios. Se ao tentar cadastrar e algum destes campos estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos obrigatórios vazios.*</i>" ||
 
 ---------------------------
 
@@ -171,10 +172,11 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - No cadastro, o administrador deverá fornecer informações como: Nome do estabelecimento, Número de Identificação , Endereço Completo, Telefone, Gerente. ||
+|| 1 - No cadastro, o administrador deverá fornecer as seguintes informações: Nome do estabelecimento, CNPJ , Endereço e Telefone. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Os campos Número de Identificação, Telefone e Endereço Completo deverão ser preenchidos com apenas números. Em caso de entrada inválida, o sistema retornará a seguinte mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
+|| 1.1 - Se ao tentar cadastrar estabelecimento e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazio.*</i>"||
+|| 1.2 - O campos Nome e CNPJ são obrigatórios. Se ao tentar cadastrar e algum destes campos estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos obrigatórios vazios.*</i>" ||
 
 ---------------------------
 
