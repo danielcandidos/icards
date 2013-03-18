@@ -12,7 +12,7 @@ https://icards.googlecode.com/files/iCards-ClassDiagram-V3.png
 
 ----------
 
-=Diagrama Entidade-Relacionamento=
+=Diagrama Entidade-Relacionamento (Version 1.0)=
 
 https://icards.googlecode.com/files/iCards-ERDiagram-V1.png
 ----------
