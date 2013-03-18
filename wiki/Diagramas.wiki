@@ -14,5 +14,5 @@ https://icards.googlecode.com/files/iCards-ClassDiagram-V3.png
 
 =Diagrama Entidade-Relacionamento=
 
-Em breve
+https://icards.googlecode.com/files/iCards-ERDiagram-V1.png
 ----------
