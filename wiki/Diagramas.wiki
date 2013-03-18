@@ -2,8 +2,8 @@
 
 Diagramas .asta - <a href="https://icards.googlecode.com/files/iCards-Diagrams-V2.asta">Download</a>
 
-=Diagrama de Casos de Uso (Version 4.0)=
-https://icards.googlecode.com/files/iCards-UseCaseDiagram-V4.png
+=Diagrama de Casos de Uso (Version 5.0)=
+https://icards.googlecode.com/files/iCards-UseCaseDiagram-V5.png
 
 ----------
 
