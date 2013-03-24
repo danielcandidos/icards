@@ -176,14 +176,14 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Fluxos alternativos* ||
 || 1.1 - Se ao tentar cadastrar estabelecimento e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazio.*</i>"||
-|| 1.2 - O campos Nome e CNPJ são obrigatórios. Se ao tentar cadastrar e algum destes campos estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos obrigatórios vazios.*</i>" ||
+
 
 ---------------------------
 
 ==UC010 - Imprimir extrato==
 
 || *Objetivo* || Imprimir arquivo com informações da conta.  ||
-|| *Descrição* || O sistema gerará um arquivo .PDF com informações de Histório de Compras e Saldo. Além de visualizar o cliente poderá imprimir. ||
+|| *Descrição* || O sistema gerará um arquivo .PDF com informações de Histórico de Compras e Saldo. Além de visualizar o cliente poderá imprimir. ||
 || *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Média. ||
 || *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
@@ -196,33 +196,62 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 -------------------------
 
-==UC011 - Manter estabelecimento==
+==UC011 - Excluir estabelecimento==
 
-|| *Objetivo* || Alterar ou excluir informações referentes a um estabelecimento cadastrado.  ||
-|| *Descrição* || O administrador altera ou exclui informações referentes a um estabelecimento cadastrado. ||
+|| *Objetivo* || Excluir informações referentes a um estabelecimento cadastrado.  ||
+|| *Descrição* || O administrador exclui informações referentes a um estabelecimento cadastrado. ||
 || *Ator* || Administrador. ||
 || *Prioridade* || Média. ||
 || *Pré-condição* || Estabelecimento cadastrado. ||
-|| *Pós-condições* || Informações cadastradas alteradas ou excluídas com sucesso. ||
+|| *Pós-condições* || Informações cadastradas excluídas com sucesso. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - Ao alterar, o Administrador acessa as informações já cadastradas do estabelecimento e faz as alterações necessárias, ao final, o programa rearmazena os dados.||
-|| 2 - Ao excluir, o Administrador acessa as informações do estabelecimento e cancela a existência do mesmo. Todos os dados serão excluídos.||
-
+|| 1 - Ao excluir, o Administrador digita o CNPJ referente ao estabelecimento e cancela a existência do mesmo. Todos os dados serão excluídos.||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Se ao tentar editar as informações de um determinado estabelecimento e for digitado alguma entrada fora dos padrões para edição, o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
-|| 2.1 - Se ao tentar excluir as informações do estabelecimento informando, e alguma entrada fora dos padrões de exclusão acontecer,o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>"||
+|| 1.1 - Se ao tentar excluir as informações do estabelecimento informando, e o CNPJ digitado não existir,o sistema retornará a mensagem de erro: "<i>*CNPJ inválido.*</i>"||
+
 
 ---------------------------
 
-==*CATÁLOGO DE ERROS*==
-||<i>*ERRO 001 || Você não tem autorização para essa função.*</i>|| 
-||<i>*ERRO 002 || Operação já efetuada.*</i>||
-||<i>*ERRO 003 || Erro ao digitar login ou senha. Tente novamente.*</i>||
-||<i>*ERRO 004 || Número de conta de usuário não existente. Tente novamente.*</i>||
-||<i>*ERRO 005 || A senha deverá conter no mínimo dois números. Tente novamente.*</i>||
-||<i>*ERRO 006 || Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>||
-||<i>*ERRO 007 || Entrada inválida. Tente novamente.*</i>||
+
+==UC012 - Cadastrar Cartão==
+
+|| *Objetivo* || Cadastrar um novo cartão.  ||
+|| *Descrição* || O administrador cadastra um novo cartão para ser disponível para um cliente cadastrado. ||
+|| *Ator* || Administrador. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || O sistema deve estar em condições para executar esta função. ||
+|| *Pós-condições* || Informações cadastradas com sucesso. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - Ao cadastrar, o Administrador digita um novo ID Cartão e uma senha.||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - Se ao tentar cadastrar um novo cartão e o ID Cartão digitado já for existente, o sistema retornará a mensagem de erro: "<i>*ID Cartão já cadastrado.*</i>"||
+
+
+----------------------------
+
+==UC013 - Excluir Cartão==
+
+|| *Objetivo* || Excluir informações referentes a um cartão cadastrado.  ||
+|| *Descrição* || O administrador exclui informações referentes a um cartão cadastrado. ||
+|| *Ator* || Administrador. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || Cartão cadastrado. ||
+|| *Pós-condições* || Informações cadastradas excluídas com sucesso. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - Ao excluir, o Administrador digita o ID Cartão referente ao cartão e cancela a existência do mesmo. Todos os dados serão excluídos.||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - Se ao tentar excluir as informações do cartão informando, e o ID Cartão digitado não existir,o sistema retornará a mensagem de erro: "<i>*ID Cartão inválido.*</i>"||
+
+-----------------------------
