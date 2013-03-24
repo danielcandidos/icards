@@ -26,7 +26,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ---------------------------
 
-==UC02 - Login==
+==UC02 - Login Usuário==
 
 || *Objetivo* || Ter acesso ao sistema. ||
 || *Descrição* || O Usuário deverá entrar com o número do iCard ,com a senha e selecionar o tipo de Usuário, para ter acesso as informações restritas de acordo com o tipo do usuário. ||
@@ -80,7 +80,46 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 -----------------------
 
-==UC05 - Adicionar Crédito==
+==UC05 - Bloquear cartão==
+
+|| *Objetivo* || Bloquear o cartão para qualquer atividade de movimento de dinheiro. ||
+|| *Descrição* || O Titular bloqueia o uso do cartão através da senha de acesso total.||
+|| *Ator* || Titular. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema. (UC02) ||
+|| *Pós-condições* || O uso do cartão estará bloqueado. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - Ao acessar o sistema, o Titular tem a opção de bloquear o cartão através de botão na tela. ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 ||
+
+
+---------------------------
+
+
+==UC06 - Imprimir extrato==
+
+|| *Objetivo* || Imprimir arquivo com informações da conta.  ||
+|| *Descrição* || O sistema gerará um arquivo .PDF com informações de Histórico de Compras e Saldo. Além de visualizar o cliente poderá imprimir. ||
+|| *Ator* || Titular ou Dependente. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
+|| *Pós-condições* || O sistema gerará arquivo .PDF com informações sobre a conta e poderá imprimi-lo. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - O cliente selecionará o item "Gerar Extrato", e o sistema gerará o arquivo .PDF com as últimas informações de saldo e histórico de compras da conta.||
+
+
+-----------------------------
+
+
+==UC07 - Adicionar Crédito==
 
 || *Objetivo* || Adicionar crédito a alguma conta. ||
 || *Descrição* || O sistema permite que qualquer pessoa adicione crédito a alguma conta, através no número da conta da mesma. ||
@@ -97,67 +136,30 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Fluxos alternativos* ||
 || 1.1 Ao tentar adicionar crédito a alguma conta, se o número da conta do usuário não existir o sistema retornará a mensagem de erro: "<i>*Número de conta de usuário não existente.*</i>" ||
 
+
 -----------------------
 
-==UC06 - Bloqueio/Desbloqueio de cartão==
 
-|| *Objetivo* || Bloquear o cartão para qualquer atividade de movimento de dinheiro. ||
-|| *Descrição* || O Titular bloqueia e desbloqueia o uso do cartão através da senha de acesso total.||
-|| *Ator* || Titular. ||
-|| *Prioridade* || Alta. ||
-|| *Pré-condição* || O Usuário deve ter acesso ao sistema. (UC02) ||
-|| *Pós-condições* || O uso do cartão estará bloqueado ou desbloqueado. ||
+==UC08 - Cadastrar Cartão==
 
-==Cenários principais de sucesso==
-
-|| *Usuário* ||
-|| 1 - Ao acessar o sistema, o Titular tem a opção de bloquear ou desbloquear o cartão através de botões na tela. ||
-
-|| *Fluxos alternativos* ||
-|| 1.1 Se ao acessar o sistema, o usuário não for Titular do cartão, retornará um erro na tela "<i>*ERRO 001 - Você não tem autorização para essa função.*</i>"||
-|| 1.2 Se a  o usuário tentar bloquear/desbloquear mais de uma vez. O sistema retorna uma mensagem de erro na tela "<i>*ERRO 002 - Operação já efetuada.*</i>"||
-
----------------------------
-
-==UC07 - Manter Cliente==
-
-|| *Objetivo* || Alterar ou excluir dados cadastrais de um cliente. ||
-|| *Descrição* || O solicitante do serviço poderá alterar seus dados cadastrais, assim como cancelar o serviço. ||
+|| *Objetivo* || Cadastrar um novo cartão.  ||
+|| *Descrição* || O administrador cadastra um novo cartão para ser disponível para um cliente cadastrado. ||
 || *Ator* || Administrador. ||
-|| *Prioridade* || Média. ||
-|| *Pré-condição* || O cliente deve possuir um cadastro. ||
-|| *Pós-condições* || Os dados cadastrais do cliente são atualizados ou excluídos com sucesso. ||
-
-==Cenários principais de sucesso==
-
-|| *Usuário* ||
-|| 1 - Ao alterar, o Administrador acessa as informações já cadastradas do cliente e faz as alterações necessárias, ao final, o programa rearmazena os dados.||
-|| 2 - Ao excluir, o Administrador acessa as informações do cliente e cancela a conta do mesmo. Todos os dados serão excluídos.||
-
-|| *Fluxos alternativos* ||
-|| 1.1 - Se ao tentar editar as informações de um determinado cliente e for digitado alguma entrada fora dos padrões para edição, o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>" ||
-|| 2.1 - Se ao tentar excluir as informações do cliente informando e alguma entrada fora dos padrões de exclusão acontecer,o sistema retornará a mensagem de erro: "<i>*ERRO 007 - Entrada inválida. Tente novamente.*</i>"||
-
------------------------------
-
-==UC08 - Debitar==
-
-|| *Objetivo* || Debitar crédito do cartão quando o pagamento for solicitado. ||
-|| *Descrição* || Quando a compra através do cartão for feita e o saldo for verificado como positivo, o pagamento é debitado da conta. ||
-|| *Ator* || Vendedor. ||
 || *Prioridade* || Alta. ||
-|| *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. Verificar se há saldo suficiente disponível na conta. ||
-|| *Pós-condições* || O pagamento e o débito serão realizados. ||
+|| *Pré-condição* || O sistema deve estar em condições para executar esta função. ||
+|| *Pós-condições* || Informações cadastradas com sucesso. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - O usuário fez a solicitação de pagamento, o sistema verifica o crédito e, se positivo, debita a quantia referente da conta. ||
+|| 1 - Ao cadastrar, o Administrador digita um novo ID Cartão e uma senha.||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Ao verificar, o saldo ser insuficiente e retornar valor negativo, impossibilitando o débito. Retornando o erro: "<i>*ERRO 006 - Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>" ||
+|| 1.1 - Se ao tentar cadastrar um novo cartão e o ID Cartão digitado já for existente, o sistema retornará a mensagem de erro: "<i>*ID Cartão já cadastrado.*</i>"||
 
----------------------------
+
+--------------------------------
+
 
 ==UC09 - Cadastrar estabelecimento==
 
@@ -178,25 +180,93 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1.1 - Se ao tentar cadastrar estabelecimento e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazio.*</i>"||
 
 
----------------------------
+-------------------------
 
-==UC010 - Imprimir extrato==
+==UC010 - Debitar==
 
-|| *Objetivo* || Imprimir arquivo com informações da conta.  ||
-|| *Descrição* || O sistema gerará um arquivo .PDF com informações de Histórico de Compras e Saldo. Além de visualizar o cliente poderá imprimir. ||
-|| *Ator* || Titular ou Dependente. ||
-|| *Prioridade* || Média. ||
-|| *Pré-condição* || O Usuário deve ter acesso ao sistema.(UC02) ||
-|| *Pós-condições* || O sistema gerará arquivo .PDF com informações sobre a conta e poderá imprimi-lo. ||
+|| *Objetivo* || Debitar crédito do cartão quando o pagamento for solicitado. ||
+|| *Descrição* || Quando a compra através do cartão for feita e o saldo for verificado como positivo, o pagamento é debitado da conta. ||
+|| *Ator* || Vendedor. ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || Definir tipo de usuário, O sistema deve estar em condições para executar esta função. Verificar se há saldo suficiente disponível na conta. ||
+|| *Pós-condições* || O pagamento e o débito serão realizados. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - O cliente selecionará o item "Gerar Extrato", e o sistema gerará o arquivo .PDF com as últimas informações de saldo e histórico de compras da conta.||
+|| 1 - O usuário fez a solicitação de pagamento, o sistema verifica o crédito e, se positivo, debita a quantia referente da conta. ||
 
--------------------------
+|| *Fluxos alternativos* ||
+|| 1.1 - Ao verificar, o saldo ser insuficiente e retornar valor negativo, impossibilitando o débito. Retornando o erro: "<i>*ERRO 006 - Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>" ||
 
-==UC011 - Excluir estabelecimento==
+
+--------------------------
+
+
+==UC011 - Visualizar Receita Total==
+
+|| *Objetivo* ||   ||
+|| *Descrição* ||  ||
+|| *Ator* || Estabelecimento ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || Estabelecimento cadastrado. ||
+|| *Pós-condições* ||  ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - ||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - ||
+
+
+---------------------------
+
+
+==UC012 - Deletar Cliente==
+
+|| *Objetivo* || Excluir dados cadastrais de um cliente. ||
+|| *Descrição* || O solicitante do serviço poderá cancelar o serviço. ||
+|| *Ator* || Administrador. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || O cliente deve possuir um cadastro. ||
+|| *Pós-condições* || Os dados cadastrais do cliente são excluídos com sucesso. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - Ao excluir, o Administrador acessa as informações do cliente e cancela a conta do mesmo a través do CPF. Todos os dados serão excluídos.||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - Se ao tentar excluir as informações do cliente informando o CPF incorreto, o sistema retornará a mensagem de erro: "<i>*CPF inválido.*</i>"||
+
+
+-----------------------------
+
+
+==UC13 - Deletar Cartão==
+
+|| *Objetivo* || Excluir informações referentes a um cartão cadastrado.  ||
+|| *Descrição* || O administrador exclui informações referentes a um cartão cadastrado. ||
+|| *Ator* || Administrador. ||
+|| *Prioridade* || Média. ||
+|| *Pré-condição* || Cartão cadastrado. ||
+|| *Pós-condições* || Informações cadastradas excluídas com sucesso. ||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 - Ao excluir, o Administrador digita o ID Cartão referente ao cartão e cancela a existência do mesmo. Todos os dados serão excluídos.||
+
+|| *Fluxos alternativos* ||
+|| 1.1 - Se ao tentar excluir as informações do cartão informando, e o ID Cartão digitado não existir,o sistema retornará a mensagem de erro: "<i>*ID Cartão inválido.*</i>"||
+
+
+-----------------------------
+
+
+==UC014 - Deletar estabelecimento==
 
 || *Objetivo* || Excluir informações referentes a um estabelecimento cadastrado.  ||
 || *Descrição* || O administrador exclui informações referentes a um estabelecimento cadastrado. ||
@@ -215,43 +285,3 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 
 ---------------------------
-
-
-==UC012 - Cadastrar Cartão==
-
-|| *Objetivo* || Cadastrar um novo cartão.  ||
-|| *Descrição* || O administrador cadastra um novo cartão para ser disponível para um cliente cadastrado. ||
-|| *Ator* || Administrador. ||
-|| *Prioridade* || Alta. ||
-|| *Pré-condição* || O sistema deve estar em condições para executar esta função. ||
-|| *Pós-condições* || Informações cadastradas com sucesso. ||
-
-==Cenários principais de sucesso==
-
-|| *Usuário* ||
-|| 1 - Ao cadastrar, o Administrador digita um novo ID Cartão e uma senha.||
-
-|| *Fluxos alternativos* ||
-|| 1.1 - Se ao tentar cadastrar um novo cartão e o ID Cartão digitado já for existente, o sistema retornará a mensagem de erro: "<i>*ID Cartão já cadastrado.*</i>"||
-
-
-----------------------------
-
-==UC013 - Excluir Cartão==
-
-|| *Objetivo* || Excluir informações referentes a um cartão cadastrado.  ||
-|| *Descrição* || O administrador exclui informações referentes a um cartão cadastrado. ||
-|| *Ator* || Administrador. ||
-|| *Prioridade* || Média. ||
-|| *Pré-condição* || Cartão cadastrado. ||
-|| *Pós-condições* || Informações cadastradas excluídas com sucesso. ||
-
-==Cenários principais de sucesso==
-
-|| *Usuário* ||
-|| 1 - Ao excluir, o Administrador digita o ID Cartão referente ao cartão e cancela a existência do mesmo. Todos os dados serão excluídos.||
-
-|| *Fluxos alternativos* ||
-|| 1.1 - Se ao tentar excluir as informações do cartão informando, e o ID Cartão digitado não existir,o sistema retornará a mensagem de erro: "<i>*ID Cartão inválido.*</i>"||
-
------------------------------
