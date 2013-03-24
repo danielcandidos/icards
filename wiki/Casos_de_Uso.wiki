@@ -22,7 +22,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 || *Fluxos alternativos* ||
 || 1.1 - Se ao tentar cadastrar e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazio.*</i>"||
-|| 1.2 - O campos Nome, CPF, Email, Tipo de Usuário e Senha são obrigatórios. Se ao tentar cadastrar e algum destes campos estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos obrigatórios vazios.*</i>" ||
+|
 
 ---------------------------
 
