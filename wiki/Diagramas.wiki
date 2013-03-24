@@ -7,8 +7,8 @@ https://icards.googlecode.com/files/iCards-UseCaseDiagram-V5.png
 
 ----------
 
-=Diagrama de Classes e Pacotes (Version 3.0)=
-https://icards.googlecode.com/files/iCards-ClassDiagram-V3.png
+=Diagrama de Classes e Pacotes (Version 4.0)=
+https://icards.googlecode.com/files/iCards-ClassDiagram-V4.png
 
 ----------
 
