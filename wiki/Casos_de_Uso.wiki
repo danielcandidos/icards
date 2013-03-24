@@ -47,7 +47,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==UC03 - Visualizar Histórico e Saldo==
 
 || *Objetivo* || Visualizar crédito e histórico de compras. ||
-|| *Descrição* || Após o acesso ao sistema (UC02), o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, horário e valor da compra)e o saldo de crédito referente a conta de usuário. ||
+|| *Descrição* || Após o acesso ao sistema (UC02), o usuário poderá visualizar informações como o histórico de suas compras (lugar da compra, data, e valor da compra)e o saldo de crédito referente a conta de usuário. ||
 || *Ator* || Titular ou Dependente. ||
 || *Prioridade* || Média. ||
 || *Pré-condição* || O Usuário deve ter acesso ao sistema. (UC02)  ||
@@ -56,8 +56,8 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - Ao clicar no ícone "Visualizar histórico de compras", o usuário terá acesso a todas informações de compras referentes à conta de usuário, como lugar onde a compra foi realizada, data, horário e valor da compra. Poderá fazer a filtragem de informações por mês.  ||
-|| 2 - Ao clicar no ícone "Visualizar saldo de crédito", o usuário terá acesso ao saldo de crédito referente a conta de usuário.||
+|| 1 - Ao acessar a sua conta o usuário terá acesso a todas as informações de compras referentes à conta de usuário, como lugar onde a compra foi realizada, data, horário e valor da compra.||
+
 
 -----------------------
 
@@ -73,10 +73,10 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - Ao acessar o sistema como Titular, o usuário poderá clicar nos itens "Configuração" e "Alterar senha" para alterar sua senha de acesso ao sistema. ||
+|| 1 - Ao acessar o sistema como Titular, o usuário poderá clicar no botão "Alterar senha" para alterar sua senha de acesso ao sistema. Deverá informar senha atual e nova senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 Ao digitar a nova senha e depois tentar concluir a alteração, se ela não estiver de acordo com a especificação para criar senha o sistema retornará a mensagem de erro: "<i>*ERRO 005 - A senha deverá conter no mínimo dois números. Tente novamente.*</i>"  ||
+|| 1.1 Ao digitar a senha atual e depois tentar concluir a alteração, se ela não estiver correta o sistema retornará a mensagem de erro: "<i>*Senha incorreta.*</i>"  ||
 
 -----------------------
 
@@ -92,10 +92,10 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - Um usuário sem estar logado no sistema poderá adicionar crédito a conta de algum usuário informando o valor do crédito e o número da conta/cartão.||
+|| 1 - Um usuário sem estar logado no sistema poderá adicionar crédito a conta de algum usuário informando o valor do crédito e o número da conta/cartão e a sua identificação.||
 
 || *Fluxos alternativos* ||
-|| 1.1 Ao tentar adicionar crédito a alguma conta, se o número da conta do usuário não existir o sistema retornará a mensagem de erro: "<i>*ERRO 004 - Número de conta de usuário não existente. Tente novamente.*</i>" ||
+|| 1.1 Ao tentar adicionar crédito a alguma conta, se o número da conta do usuário não existir o sistema retornará a mensagem de erro: "<i>*Número de conta de usuário não existente.*</i>" ||
 
 -----------------------
 
