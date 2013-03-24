@@ -95,7 +95,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - Ao acessar o sistema, o Titular tem a opção de bloquear o cartão através de botão na tela. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 ||
+|| 1.1 - Se o Dependente tiver acesso ao sistema, a opção de bloquear cartão será desabilitada.||
 
 
 ---------------------------
@@ -177,7 +177,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - No cadastro, o administrador deverá fornecer as seguintes informações: Nome do estabelecimento, CNPJ , Endereço e Telefone. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Se ao tentar cadastrar estabelecimento e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazio.*</i>"||
+|| 1.1 - Se ao tentar cadastrar estabelecimento e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazios.*</i>"||
 
 
 -------------------------
@@ -218,7 +218,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - O usuário fez a solicitação de pagamento, o sistema verifica o crédito e, se positivo, debita a quantia referente da conta. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Ao verificar, o saldo ser insuficiente e retornar valor negativo, impossibilitando o débito. Retornando o erro: "<i>*ERRO 006 - Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>" ||
+|| 1.1 - Ao verificar, o saldo ser insuficiente e retornar valor negativo, impossibilitando o débito. Retornando o erro: "<i>*Você não possui saldo suficiente para a operação. Por favor, recarregue seu cartão.*</i>" ||
 
 
 --------------------------
@@ -226,20 +226,17 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 ==UC012 - Visualizar Receita Total==
 
-|| *Objetivo* ||   ||
-|| *Descrição* ||  ||
+|| *Objetivo* ||Mostra as informações de receita. ||
+|| *Descrição* || Ao acessar o sistema, o estabelecimento terá a informação de receita total. ||
 || *Ator* || Estabelecimento ||
 || *Prioridade* || Média. ||
-|| *Pré-condição* || Estabelecimento cadastrado. ||
-|| *Pós-condições* ||  ||
+|| *Pré-condição* || Ter acesso ao sistema. ||
+|| *Pós-condições* || Informação de receita total visualizada. ||
 
 ==Cenários principais de sucesso==
 
 || *Usuário* ||
-|| 1 - ||
-
-|| *Fluxos alternativos* ||
-|| 1.1 - ||
+|| 1 - Ao efetuar login, o sistema exibira informações de receita total do estabelecimento.||
 
 
 ---------------------------
