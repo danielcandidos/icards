@@ -182,7 +182,28 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 
 -------------------------
 
-==UC010 - Debitar==
+
+==UC010 - Login Estabelecimento==
+
+|| *Objetivo* || O estabelecimento ter acesso ao sistema. ||
+|| *Descrição* || O funcionário do estabelecimento deverá entrar com o número do CNPJ e com a senha para ter acesso as informações do estabelecimento ||
+|| *Ator* || Estabelecimento(Funcionário) ||
+|| *Prioridade* || Alta. ||
+|| *Pré-condição* || O estabelecimento deverá ter cadastro. (UC01) ||
+|| *Pós-condições* ||O estabelecimento tem acesso ao sistema.||
+
+==Cenários principais de sucesso==
+
+|| *Usuário* ||
+|| 1 – Se o CNPJ e a senha digitados estiverem corretos, possuirá o controle da conta. ||
+|| *Fluxos alternativos* ||
+|| 1.1 – Se o CNPJ  do estabelecimento e/ou a senha estiverem errados, o sistema retornará o seguinte erro: "<i>*Erro ao digitar CNPJ ou senha.*</i>"||
+
+
+---------------------------
+
+
+==UC011 - Debitar==
 
 || *Objetivo* || Debitar crédito do cartão quando o pagamento for solicitado. ||
 || *Descrição* || Quando a compra através do cartão for feita e o saldo for verificado como positivo, o pagamento é debitado da conta. ||
@@ -203,7 +224,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 --------------------------
 
 
-==UC011 - Visualizar Receita Total==
+==UC012 - Visualizar Receita Total==
 
 || *Objetivo* ||   ||
 || *Descrição* ||  ||
@@ -224,7 +245,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 ---------------------------
 
 
-==UC012 - Deletar Cliente==
+==UC013 - Deletar Cliente==
 
 || *Objetivo* || Excluir dados cadastrais de um cliente. ||
 || *Descrição* || O solicitante do serviço poderá cancelar o serviço. ||
@@ -245,7 +266,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 -----------------------------
 
 
-==UC13 - Deletar Cartão==
+==UC14 - Deletar Cartão==
 
 || *Objetivo* || Excluir informações referentes a um cartão cadastrado.  ||
 || *Descrição* || O administrador exclui informações referentes a um cartão cadastrado. ||
@@ -266,7 +287,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 -----------------------------
 
 
-==UC014 - Deletar estabelecimento==
+==UC015 - Deletar estabelecimento==
 
 || *Objetivo* || Excluir informações referentes a um estabelecimento cadastrado.  ||
 || *Descrição* || O administrador exclui informações referentes a um estabelecimento cadastrado. ||
