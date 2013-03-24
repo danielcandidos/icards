@@ -21,7 +21,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || 1 - No cadastro, o usuário solicitante do serviço, deverá fornecer as seguintes informações: Nome,Data de Nascimento, CPF, Email, Nacionalidade,Endereço, Telefone, Senha, Tipo de Usuário(dependendo do tipo, deverá fornecer o CPF do Dependente) e senha. ||
 
 || *Fluxos alternativos* ||
-|| 1.1 - Se ao tentar cadastrar e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazio.*</i>"||
+|| 1.1 - Se ao tentar cadastrar e algum campo estiver vazio, o sistema retornará a seguinte mensagem: "<i>*Existem campos vazios.*</i>"||
 
 
 ---------------------------
@@ -189,7 +189,7 @@ Um caso de uso representa uma parte discreta da interação entre um usuário (h
 || *Descrição* || O funcionário do estabelecimento deverá entrar com o número do CNPJ e com a senha para ter acesso as informações do estabelecimento ||
 || *Ator* || Estabelecimento(Funcionário) ||
 || *Prioridade* || Alta. ||
-|| *Pré-condição* || O estabelecimento deverá ter cadastro. (UC01) ||
+|| *Pré-condição* || O estabelecimento deverá ter cadastro. (UC09) ||
 || *Pós-condições* ||O estabelecimento tem acesso ao sistema.||
 
 ==Cenários principais de sucesso==
